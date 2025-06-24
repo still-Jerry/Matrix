@@ -1,0 +1,3 @@
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\x64\Debug\matrix.vcxproj.AssemblyReference.cache
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\x64\Debug\matrix.MainForm.resources
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\x64\Debug\matrix.vcxproj.GenerateResource.cache
