@@ -1,14 +1,23 @@
 ﻿  MainForm.cpp
-C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(614,9): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(628,9): warning C4244: инициализация: преобразование "wchar_t" в "char", возможна потеря данных
   (компиляция исходного файла "MainForm.cpp")
   
-C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(635,20): warning C4101: cell: неиспользованная локальная переменная
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(649,20): warning C4101: cell: неиспользованная локальная переменная
   (компиляция исходного файла "MainForm.cpp")
   
-C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(648,20): warning C4101: cell: неиспользованная локальная переменная
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(662,20): warning C4101: cell: неиспользованная локальная переменная
   (компиляция исходного файла "MainForm.cpp")
   
-C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(767,14): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(838,14): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+  (компиляция исходного файла "MainForm.cpp")
+  
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(909,14): warning C4965: неявная упаковка целого числа 0; используйте nullptr или явное приведение типов
+  (компиляция исходного файла "MainForm.cpp")
+  
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(1012,30): warning C4101: inverse: неиспользованная локальная переменная
+  (компиляция исходного файла "MainForm.cpp")
+  
+C:\Users\admin\Desktop\Политех\Программирование\matrix\matrix\MainForm.h(1031,30): warning C4101: inverse: неиспользованная локальная переменная
   (компиляция исходного файла "MainForm.cpp")
   
   MainForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка

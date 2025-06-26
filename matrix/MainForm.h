@@ -158,9 +158,9 @@ namespace matrix {
 			this->StepButtonA = (gcnew System::Windows::Forms::Button());
 			this->TransButtonA = (gcnew System::Windows::Forms::Button());
 			this->ObrButtonA = (gcnew System::Windows::Forms::Button());
-			this->OpredButtonA = (gcnew System::Windows::Forms::Button());
 			this->DelColButtunA = (gcnew System::Windows::Forms::Button());
 			this->AddColButtunA = (gcnew System::Windows::Forms::Button());
+			this->OpredButtonA = (gcnew System::Windows::Forms::Button());
 			this->DelRowButtunA = (gcnew System::Windows::Forms::Button());
 			this->AddRowButtunA = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
@@ -174,12 +174,12 @@ namespace matrix {
 			this->StepButtonB = (gcnew System::Windows::Forms::Button());
 			this->numericUpDownB = (gcnew System::Windows::Forms::NumericUpDown());
 			this->dataGridViewB = (gcnew System::Windows::Forms::DataGridView());
-			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewA))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownA))->BeginInit();
@@ -207,9 +207,9 @@ namespace matrix {
 			this->groupBox1->Controls->Add(this->StepButtonA);
 			this->groupBox1->Controls->Add(this->TransButtonA);
 			this->groupBox1->Controls->Add(this->ObrButtonA);
-			this->groupBox1->Controls->Add(this->OpredButtonA);
 			this->groupBox1->Controls->Add(this->DelColButtunA);
 			this->groupBox1->Controls->Add(this->AddColButtunA);
+			this->groupBox1->Controls->Add(this->OpredButtonA);
 			this->groupBox1->Controls->Add(this->DelRowButtunA);
 			this->groupBox1->Controls->Add(this->AddRowButtunA);
 			this->groupBox1->Location = System::Drawing::Point(0, 0);
@@ -270,7 +270,7 @@ namespace matrix {
 			// numericUpDownA
 			// 
 			this->numericUpDownA->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->numericUpDownA->Location = System::Drawing::Point(249, 288);
+			this->numericUpDownA->Location = System::Drawing::Point(249, 253);
 			this->numericUpDownA->Name = L"numericUpDownA";
 			this->numericUpDownA->ReadOnly = true;
 			this->numericUpDownA->Size = System::Drawing::Size(44, 25);
@@ -279,7 +279,7 @@ namespace matrix {
 			// StepButtonA
 			// 
 			this->StepButtonA->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->StepButtonA->Location = System::Drawing::Point(160, 287);
+			this->StepButtonA->Location = System::Drawing::Point(160, 252);
 			this->StepButtonA->Name = L"StepButtonA";
 			this->StepButtonA->Size = System::Drawing::Size(83, 29);
 			this->StepButtonA->TabIndex = 18;
@@ -290,7 +290,7 @@ namespace matrix {
 			// TransButtonA
 			// 
 			this->TransButtonA->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->TransButtonA->Location = System::Drawing::Point(160, 252);
+			this->TransButtonA->Location = System::Drawing::Point(16, 252);
 			this->TransButtonA->Name = L"TransButtonA";
 			this->TransButtonA->Size = System::Drawing::Size(133, 29);
 			this->TransButtonA->TabIndex = 17;
@@ -301,23 +301,13 @@ namespace matrix {
 			// ObrButtonA
 			// 
 			this->ObrButtonA->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
-			this->ObrButtonA->Location = System::Drawing::Point(12, 287);
+			this->ObrButtonA->Location = System::Drawing::Point(160, 287);
 			this->ObrButtonA->Name = L"ObrButtonA";
 			this->ObrButtonA->Size = System::Drawing::Size(133, 29);
 			this->ObrButtonA->TabIndex = 16;
 			this->ObrButtonA->Text = L"Обратная";
 			this->ObrButtonA->UseVisualStyleBackColor = true;
 			this->ObrButtonA->Click += gcnew System::EventHandler(this, &MainForm::ObrButtonA_Click);
-			// 
-			// OpredButtonA
-			// 
-			this->OpredButtonA->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
-			this->OpredButtonA->Location = System::Drawing::Point(12, 252);
-			this->OpredButtonA->Name = L"OpredButtonA";
-			this->OpredButtonA->Size = System::Drawing::Size(133, 29);
-			this->OpredButtonA->TabIndex = 15;
-			this->OpredButtonA->Text = L"Определитель";
-			this->OpredButtonA->UseVisualStyleBackColor = true;
 			// 
 			// DelColButtunA
 			// 
@@ -340,6 +330,17 @@ namespace matrix {
 			this->AddColButtunA->Text = L"+C";
 			this->AddColButtunA->UseVisualStyleBackColor = true;
 			this->AddColButtunA->Click += gcnew System::EventHandler(this, &MainForm::AddColButtunA_Click);
+			// 
+			// OpredButtonA
+			// 
+			this->OpredButtonA->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->OpredButtonA->Location = System::Drawing::Point(16, 287);
+			this->OpredButtonA->Name = L"OpredButtonA";
+			this->OpredButtonA->Size = System::Drawing::Size(133, 29);
+			this->OpredButtonA->TabIndex = 15;
+			this->OpredButtonA->Text = L"Определитель";
+			this->OpredButtonA->UseVisualStyleBackColor = true;
+			this->OpredButtonA->Click += gcnew System::EventHandler(this, &MainForm::OpredButtonA_Click);
 			// 
 			// DelRowButtunA
 			// 
@@ -497,20 +498,20 @@ namespace matrix {
 			this->dataGridViewB->Size = System::Drawing::Size(280, 185);
 			this->dataGridViewB->TabIndex = 13;
 			// 
-			// Column3
+			// Column1
 			// 
-			this->Column3->HeaderText = L"Column3";
-			this->Column3->Name = L"Column3";
+			this->Column1->HeaderText = L"Column1";
+			this->Column1->Name = L"Column1";
 			// 
 			// Column2
 			// 
 			this->Column2->HeaderText = L"Column2";
 			this->Column2->Name = L"Column2";
 			// 
-			// Column1
+			// Column3
 			// 
-			this->Column1->HeaderText = L"Column1";
-			this->Column1->Name = L"Column1";
+			this->Column3->HeaderText = L"Column3";
+			this->Column3->Name = L"Column3";
 			// 
 			// groupBox2
 			// 
@@ -532,16 +533,6 @@ namespace matrix {
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"Матрица B";
 			// 
-			// button4
-			// 
-			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
-			this->button4->Location = System::Drawing::Point(6, 290);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(133, 29);
-			this->button4->TabIndex = 19;
-			this->button4->Text = L"Определитель";
-			this->button4->UseVisualStyleBackColor = true;
-			// 
 			// button5
 			// 
 			this->button5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
@@ -551,6 +542,18 @@ namespace matrix {
 			this->button5->TabIndex = 20;
 			this->button5->Text = L"Обратная";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MainForm::button5_Click);
+			// 
+			// button4
+			// 
+			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button4->Location = System::Drawing::Point(6, 290);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(133, 29);
+			this->button4->TabIndex = 19;
+			this->button4->Text = L"Определитель";
+			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MainForm::button4_Click);
 			// 
 			// MainForm
 			// 
@@ -664,9 +667,66 @@ private: System::Void TransButtonB_Click(System::Object^ sender, System::EventAr
 	}
 	label1->Text = str;
 }
+#define SIZE 10
+	   // Основная функция для вычисления обратной матрицы
+	   void invertMatrix(double matrix[SIZE][SIZE], double inverse[SIZE][SIZE], int n) {
+		   int i, j, k;
+		   double ratio;
+
+		   // Складываем слева единичную матрицу
+		   for (i = 0; i < n; i++) {
+			   for (j = 0; j < n; j++) {
+				   inverse[i][j] = (i == j) ? 1.0f : 0.0f;
+			   }
+		   }
+
+		   // Метод Гаусса-Жордана
+		   for (i = 0; i < n; i++) {
+			   // Главная диагональ должна быть ненулевой
+			   if (matrix[i][i] == 0.0f) {
+				  // printf("Обратная матрица не существует.\\n");
+				   return;
+			   }
+
+			   // Делим строку на диагональный элемент
+			   for (j = 0; j < 2 * n; j++) {
+				   matrix[i][j] /= matrix[i][i];
+				   inverse[i][j] /= matrix[i][i];
+			   }
+
+			   // Выравниваем остальные строки
+			   for (k = 0; k < n; k++) {
+				   if (k != i) {
+					   ratio = matrix[k][i];
+					   for (j = 0; j < n; j++) {
+						   matrix[k][j] -= ratio * matrix[i][j];
+						   inverse[k][j] -= ratio * inverse[i][j];
+					   }
+				   }
+			   }
+		   }
+	   }
+
+
 private: System::Void ObrButtonA_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (dataGridViewA->RowCount == dataGridViewA->ColumnCount) {
-	
+		int n= dataGridViewA->ColumnCount;
+		System::String^ str;
+		str = "Ответ:\n";
+		double matrix[SIZE][SIZE], inverse[SIZE][SIZE];
+		for (int i = 0; i < dataGridViewA->RowCount; i++) {
+			for (int j = 0; j < dataGridViewA->ColumnCount; j++) {
+				matrix[i][j] = Convert::ToDouble(dataGridViewA->Rows[i]->Cells[j]->Value);
+			}
+		}
+		invertMatrix(matrix, inverse, n);
+		for (int i = 0; i < dataGridViewA->RowCount; i++) {
+			for (int j = 0; j < dataGridViewA->ColumnCount; j++) {
+				str += inverse[i][j]+" ";
+			}
+			str += "\n";
+		}
+		label1->Text = str;
 	}
 	else {
 		label1->Text = "Кол-во ячеек должно совпадать с кол-вом столбцов";
@@ -886,6 +946,100 @@ private: System::Void StepButtonB_Click(System::Object^ sender, System::EventArg
 	}
 	else {
 		label1->Text = "Матрица должна быть квадратной";
+	}
+}
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (dataGridViewB->RowCount == dataGridViewB->ColumnCount) {
+		int n = dataGridViewB->ColumnCount;
+		System::String^ str;
+		str = "Ответ:\n";
+		double matrix[SIZE][SIZE], inverse[SIZE][SIZE];
+		for (int i = 0; i < dataGridViewB->RowCount; i++) {
+			for (int j = 0; j < dataGridViewB->ColumnCount; j++) {
+				matrix[i][j] = Convert::ToDouble(dataGridViewB->Rows[i]->Cells[j]->Value);
+			}
+		}
+		invertMatrix(matrix, inverse, n);
+		for (int i = 0; i < dataGridViewB->RowCount; i++) {
+			for (int j = 0; j < dataGridViewB->ColumnCount; j++) {
+				str += inverse[i][j] + " ";
+			}
+			str += "\n";
+		}
+		label1->Text = str;
+	}
+	else {
+		label1->Text = "Кол-во ячеек должно совпадать с кол-вом столбцов";
+	}
+}
+
+	   // Рекурсивная функция для вычисления определителя матрицы
+	   double determinant(double matrix[SIZE][SIZE], int n) {
+		   double det = 0.0f;
+		   double submatrix[SIZE][SIZE];
+		   int sign = 1; // знак (изначально положительный)
+
+		   // Базовый случай: если матрица 1x1
+		   if (n == 1) {
+			   return matrix[0][0];
+		   }
+
+		   // Расчёт определителя разложением по первой строке
+		   for (int f = 0; f < n; f++) {
+			   // Формирование уменьшенной матрицы (минор)
+			   int pos_i = 0;
+			   for (int i = 1; i < n; i++) {
+				   int pos_j = 0;
+				   for (int j = 0; j < n; j++) {
+					   if (j == f) continue; // пропускаем выбранный столбец
+					   submatrix[pos_i][pos_j++] = matrix[i][j];
+				   }
+				   pos_i++;
+			   }
+
+			   // Рекомбинация с предыдущими элементами
+			   det += sign * matrix[0][f] * determinant(submatrix, n - 1);
+			   sign = -sign; // чередование знака
+		   }
+
+		   return det;
+	   }
+private: System::Void OpredButtonA_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (dataGridViewA->RowCount == dataGridViewA->ColumnCount) {
+		int n = dataGridViewA->ColumnCount;
+		System::String^ str;
+		str = "Ответ:\n";
+		double matrix[SIZE][SIZE], inverse[SIZE][SIZE];
+		for (int i = 0; i < dataGridViewA->RowCount; i++) {
+			for (int j = 0; j < dataGridViewA->ColumnCount; j++) {
+				matrix[i][j] = Convert::ToDouble(dataGridViewA->Rows[i]->Cells[j]->Value);
+			}
+		}
+		double det = determinant(matrix, n);
+		
+		label1->Text = str + det;
+	}
+	else {
+		label1->Text = "Кол-во ячеек должно совпадать с кол-вом столбцов";
+	}
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (dataGridViewB->RowCount == dataGridViewB->ColumnCount) {
+		int n = dataGridViewB->ColumnCount;
+		System::String^ str;
+		str = "Ответ:\n";
+		double matrix[SIZE][SIZE], inverse[SIZE][SIZE];
+		for (int i = 0; i < dataGridViewB->RowCount; i++) {
+			for (int j = 0; j < dataGridViewB->ColumnCount; j++) {
+				matrix[i][j] = Convert::ToDouble(dataGridViewB->Rows[i]->Cells[j]->Value);
+			}
+		}
+		double det = determinant(matrix, n);
+
+		label1->Text = str + det;
+	}
+	else {
+		label1->Text = "Кол-во ячеек должно совпадать с кол-вом столбцов";
 	}
 }
 };
